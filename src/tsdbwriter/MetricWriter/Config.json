@@ -1,0 +1,14 @@
+﻿/*  
+Copyright (c) Microsoft.  All rights reserved.  Licensed under the MIT License.  See LICENSE in the root of the repository for license information 
+*/
+{
+    "TsdbHostName": "localhost", //the DNS name of the TSDB HOST
+    "TsdbPortNumber": "4242", //TSDB port number; the default is 4242;
+    "MetricName": "LivingRoom.Temperature", //any meaningful name
+    "StartDate": "01/01/2013", //mandatory
+    "EndDate": "01/2/2013", //if not specificed current DateTime.Now will be used
+    "SamplingIntervalMinutes": "5", //minutes
+    "MetricLow": "65", //low end of the metric
+    "MetricHigh": "85", //high end of the metric
+    "Tags": { "host": "gateway", "app": "test" }//specify atleast one tag as it is required by TSDB
+}
